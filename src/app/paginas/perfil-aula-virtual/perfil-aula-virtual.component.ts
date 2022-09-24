@@ -13,3 +13,4 @@ export class PerfilAulaVirtualComponent implements OnInit {
   }
 
 }
+
