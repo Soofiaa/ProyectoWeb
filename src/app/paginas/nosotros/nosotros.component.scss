@@ -6,7 +6,6 @@ body{
     color: #0062ff !important;
     }
 
-
 .separador-arriba{
     margin-top: 30px;
 }
@@ -18,3 +17,11 @@ body{
     margin-top: 20px;
     margin-bottom: 50px;
 }
+
+/* RESPONSIVIDAD */
+@media screen and (max-width: 600px) {
+    .row{
+        width: 100%;
+    }
+}
+/* RESPONSIVIDAD */
