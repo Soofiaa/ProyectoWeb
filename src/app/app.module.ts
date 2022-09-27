@@ -12,7 +12,7 @@ import { NosotrosComponent } from './paginas/nosotros/nosotros.component';
 import { GaleriaComponent } from './paginas/galeria/galeria.component';
 import { IngresoAulaVirtualComponent } from './paginas/ingreso-aula-virtual/ingreso-aula-virtual.component';
 import { PerfilAulaVirtualComponent } from './paginas/perfil-aula-virtual/perfil-aula-virtual.component';
-import { Asignatura1Component } from './paginas/perfilAulaVirtual/asignatura1/asignatura1.component';
+import { AsignaturaComponent } from './paginas/asignatura/asignatura.component';
 import { VerMasComponent } from './paginas/ver-mas/ver-mas.component';
 
 @NgModule({
@@ -26,7 +26,7 @@ import { VerMasComponent } from './paginas/ver-mas/ver-mas.component';
     GaleriaComponent,
     IngresoAulaVirtualComponent,
     PerfilAulaVirtualComponent,
-    Asignatura1Component,
+    AsignaturaComponent,
     VerMasComponent
   ],
   imports: [
