@@ -1,3 +1,4 @@
+<p>ingreso-aula-virtual works!</p>
 <div class="vh-100 d-flex justify-content-center align-items-center">
     <div class="container">
       <div class="row d-flex justify-content-center">
@@ -7,7 +8,7 @@
             <div class="card-body p-5">
               <form class="mb-3 mt-md-4">
                 <h2 class="fw-bold mb-2 text-uppercase ">Aula Virtual</h2>
-                <p class=" mb-5">Ingrese  las credenciales del aula virtual del alumno</p>
+                <p class=" mb-5">Ingrese las credenciales de su aula virtual</p>
                 <div class="mb-3">
                   <label for="email" class="form-label ">Rut alumno</label>
                   <input type="email" class="form-control" id="email" placeholder="Rut alumno, sin puntos, ni guión">
@@ -16,11 +17,12 @@
                   <label for="password" class="form-label ">Contraseña</label>
                   <input type="password" class="form-control" id="password" placeholder="*******">
                 </div>
-                <p class="small"><a class="text-primary" routerlink="/recuperar-contrasena">¿Olvidaste la contraseña?</a></p>
-                <div>
-                    <a id="boton-ingresar" href="/perfil-aula-virtual" class="btn btn-primary">Ingresar</a>
+                <a id="link-recuperar-contrasena" class="text-primary" href="/recuperar-contrasena">¿Olvidaste la contraseña?</a>
+                <div id="botones-ingreso">
+                    <a id="boton-ingresar-alumno" href="/perfil-alumno" class="btn btn-primary">Ingresar como alumno</a>
+                    <a id="boton-ingresar-profesor" href="/perfil-profesor" class="btn btn-primary">Ingresar como profesor</a>
                 </div>
-                <div class ="text-center"> 
+                <div id="boton-volver" class ="text-center"> 
                     <button routerLink="/" class="btn btn-primary text-center mt-2"  type="submit">Volver a la página principal</button>
                 </div>
               </form> 
