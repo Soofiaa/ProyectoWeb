@@ -1,6 +1,5 @@
-<p>ingreso-aula-virtual works!</p>
 <div class="vh-100 d-flex justify-content-center align-items-center">
-    <div class="container">
+    <div id="cuadro" class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-12 col-md-8 col-lg-6">
           <div class="border border-3 border-primary"></div>
@@ -10,8 +9,8 @@
                 <h2 class="fw-bold mb-2 text-uppercase ">Aula Virtual</h2>
                 <p class=" mb-5">Ingrese las credenciales de su aula virtual</p>
                 <div class="mb-3">
-                  <label for="email" class="form-label ">Rut alumno</label>
-                  <input type="email" class="form-control" id="email" placeholder="Rut alumno, sin puntos, ni guión">
+                  <label for="rut" class="form-label ">Rut alumno</label>
+                  <input type="rut" class="form-control" id="rut" placeholder="Rut alumno, sin puntos, ni guión">
                 </div>
                 <div class="mb-3">
                   <label for="password" class="form-label ">Contraseña</label>
@@ -19,11 +18,11 @@
                 </div>
                 <a id="link-recuperar-contrasena" class="text-primary" href="/recuperar-contrasena">¿Olvidaste la contraseña?</a>
                 <div id="botones-ingreso">
-                    <a id="boton-ingresar-alumno" href="/perfil-alumno" class="btn btn-primary">Ingresar como alumno</a>
-                    <a id="boton-ingresar-profesor" href="/perfil-profesor" class="btn btn-primary">Ingresar como profesor</a>
+                    <a id="boton-ingresar-alumno" href="/perfil-alumno" class="btn btn-primary" type="submit">Ingresar como alumno</a>
+                    <a id="boton-ingresar-profesor" href="/perfil-profesor" class="btn btn-primary" type="submit">Ingresar como profesor</a>
                 </div>
                 <div id="boton-volver" class ="text-center"> 
-                    <button routerLink="/" class="btn btn-primary text-center mt-2"  type="submit">Volver a la página principal</button>
+                    <button routerLink="/" class="btn btn-primary text-center mt-2">Volver a la página principal</button>
                 </div>
               </form> 
             </div>

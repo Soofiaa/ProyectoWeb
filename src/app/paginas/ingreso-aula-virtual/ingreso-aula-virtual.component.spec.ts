@@ -21,3 +21,4 @@ describe('IngresoAulaVirtualComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+

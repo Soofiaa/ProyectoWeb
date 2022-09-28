@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './paginas/inicio/inicio.component';
 import { ContactoComponent } from './paginas/contacto/contacto.component';
@@ -11,6 +11,9 @@ import { AsignaturaProfesorComponent } from './paginas/asignatura-profesor/asign
 import { AsignaturaAlumnoComponent } from './paginas/asignatura-alumno/asignatura-alumno.component';
 import { IngresoAulaVirtualComponent } from './paginas/ingreso-aula-virtual/ingreso-aula-virtual.component';
 import { RecuperarContrasenaComponent } from './paginas/recuperar-contrasena/recuperar-contrasena.component';
+import { RecuperarContrasenaListoComponent } from './paginas/recuperar-contrasena-listo/recuperar-contrasena-listo.component';
+import { NuevaContrasenaComponent } from './paginas/nueva-contrasena/nueva-contrasena.component';
+import { NuevaContrasenaListaComponent } from './paginas/nueva-contrasena-lista/nueva-contrasena-lista.component';
 
 /* rutas para cada pagina del sitio web*/
 const routes: Routes = [
@@ -25,6 +28,9 @@ const routes: Routes = [
   {path: 'perfil-alumno/asignatura-alumno', component: AsignaturaAlumnoComponent},
   {path: 'ingreso-aula-virtual', component: IngresoAulaVirtualComponent},
   {path: 'recuperar-contrasena', component: RecuperarContrasenaComponent},
+  {path: 'recuperar-contrasena-listo', component: RecuperarContrasenaListoComponent},
+  {path: 'nueva-contrasena', component: NuevaContrasenaComponent},
+  {path: 'nueva-contrasena-lista', component: NuevaContrasenaListaComponent},
 ];
 
 @NgModule({
