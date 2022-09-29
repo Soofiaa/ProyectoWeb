@@ -1,3 +1,5 @@
+<!-- NO ME CARGA LA PÁGINA -->
+
 <div class="vh-100 d-flex justify-content-center align-items-center">
     <div id="cuadro" class="container">
       <div class="row d-flex justify-content-center">
@@ -9,17 +11,39 @@
                 <h2 class="fw-bold mb-2 text-uppercase ">Aula Virtual</h2>
                 <p class=" mb-5">Ingrese las credenciales de su aula virtual</p>
                 <div class="mb-3">
+                  <input type="text" formControlName="rut">
+                  <div id="aviso" ngIf="this.formularioContacto.get('rut')?.errors?.['required']">
+                    El rut no puede quedar vacío
+                  </div>
+                  <div *ngIf="this.formularioLogIn.get('rut')?.errors?.['minlength']">
+                    <div id="aviso">
+                        Debe tener como mínimo 8 caracteres.
+                    </div>
+                  </div>
+                  <div *ngIf="this.formularioLogIn.get('rut')?.errors?.['maxlength']">
+                    <div id="aviso">
+                        Debe tener como máximo 10 caracteres.
+                    </div>
+                  </div>
+                  <!--
                   <label for="rut" class="form-label ">Rut</label>
                   <input type="rut" class="form-control" id="rut" placeholder="Rut sin puntos, ni guión">
+                  -->
                 </div>
                 <div class="mb-3">
+                  <input type="text" formControlName="password">
+                  <div *ngIf="this.formularioLogIn.get('password')?.errors?.['required'] || this.formularioLogIn.get('password')?.touched">
+                    Tiene que ingresar la contraseña.
+                  </div>
+                <!--
                   <label for="password" class="form-label ">Contraseña</label>
                   <input type="password" class="form-control" id="password" placeholder="*******">
+                -->
                 </div>
                 <a id="link-recuperar-contrasena" class="text-primary" href="/recuperar-contrasena">¿Olvidaste la contraseña?</a>
                 <div id="botones-ingreso">
-                    <a id="boton-ingresar-alumno" href="/perfil-alumno" class="btn btn-primary" type="submit">Ingresar como alumno</a>
-                    <a id="boton-ingresar-profesor" href="/perfil-profesor" class="btn btn-primary" type="submit">Ingresar como profesor</a>
+                  <button id="boton-ingresar-alumno" class="btn btn-primary btn-lg" type="submit" [disabled]="formularioLogIn.invalid" href="/perfil-alumno">Ingresar como alumno</button>
+                  <button id="boton-ingresar-profesor" class="btn btn-primary btn-lg" type="submit" [disabled]="formularioLogIn.invalid" href="/perfil-profesor">Ingresar como profesor</button>
                 </div>
                 <div id="boton-volver" class ="text-center"> 
                     <button routerLink="/" class="btn btn-primary text-center mt-2">Volver a la página principal</button>

@@ -24,27 +24,57 @@
           </div>
         </div>
     </div>
+
     <div class="col col-50">
         <div class="card" >
-          
-            <form>
                 <div class="text-center">
                     <h2 id="texto-contactenos" >Contáctenos</h2>
                     <p>En caso de cualquier duda, contáctenos, le responderemos a la brevedad.</p>
                 </div>
 
-                <div class="form-group">
-                    <label class="form-label" for="name">Nombre</label>
-                      <input class="form-control" id="name" type="text" placeholder="Ingrese su nombre" />
+            <form [formGroup]="formularioContacto" (ngSubmit)="submit()">
+                <div>
+                  <label>
+                    Nombre:
+                    <input formControlName="nombre" id="name" class="casilla" type="text" placeholder="Ingrese su nombre">
+                  </label>
+                  <div *ngIf="this.formularioContacto.get('nombre')?.errors?.['required']">
+                    <div id="aviso">
+                        Por favor ingrese su nombre.
+                    </div>
                   </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Correo electrónico</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" 
-                         aria-describedby="emailHelp" placeholder="Ingrese su correo electrónico">
+                  <div *ngIf="this.formularioContacto.get('nombre')?.errors?.['minlength']">
+                    <div id="aviso">
+                        Debe tener como mínimo 10 caracteres.
+                    </div>
+                  </div>
                 </div>
-                <div class="form-group">
-                    <label class="form-label" for="message">Mensaje</label>
-                      <textarea class="form-control" id="message" type="text" placeholder="Escriba su mensaje aquí" style="height: 10rem;"></textarea>
+                <div>
+                  <label>
+                    Correo electrónico:
+                    <input type="text" formControlName="correo" class="casilla" placeholder="Ingrese su correo electrónico">
+                  </label>
+                  <div *ngIf="this.formularioContacto.get('correo')?.errors?.['required']">
+                    <div id="aviso">
+                        Por favor ingrese un correo electrónico.
+                    </div>
+                  </div>
+                  <div *ngIf="this.formularioContacto.get('correo')?.errors?.['email']">
+                    <div id="aviso">
+                        Por favor ingrese un correo electrónico válido.
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <label>
+                    Mensaje:
+                    <input formControlName="mensaje" placeholder="Escriba su mensaje aquí" class="casilla" id="message" type="text" style="height: 10rem;">
+                  </label>
+                  <div *ngIf="this.formularioContacto.get('mensaje')?.errors?.['required']">
+                    <div id="aviso">
+                        Por favor ingrese un mensaje.
+                    </div>
+                  </div>
                 </div>
                 <div class="adjuntar-enviar">
                     <div class="row">
@@ -56,13 +86,12 @@
                         </div>
                         <div class="enviar">
                             <div class="boton-enviar">
-                                <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
+                              <button class="btn btn-primary btn-lg" type="submit" [disabled]="formularioContacto.invalid" onclick="location.reload()">Enviar</button>
                             </div>
                         </div>
                       </div>
                 </div>
-            </form>
-
+              </form>
         </div>
             <div class="texto-bajo-formulario">
                 <p> 
@@ -71,6 +100,7 @@
                 </p>
             </div>
     </div>
+
     <div class="col col-25">
         <div class= "mapa">
             <!-- MAPA -->
