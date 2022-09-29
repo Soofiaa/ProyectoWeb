@@ -14,6 +14,7 @@ import { RecuperarContrasenaComponent } from './paginas/recuperar-contrasena/rec
 import { RecuperarContrasenaListoComponent } from './paginas/recuperar-contrasena-listo/recuperar-contrasena-listo.component';
 import { NuevaContrasenaComponent } from './paginas/nueva-contrasena/nueva-contrasena.component';
 import { NuevaContrasenaListaComponent } from './paginas/nueva-contrasena-lista/nueva-contrasena-lista.component';
+import { EditarAsignaturaComponent } from './paginas/editar-asignatura/editar-asignatura.component';
 
 /* rutas para cada pagina del sitio web*/
 const routes: Routes = [
@@ -31,6 +32,7 @@ const routes: Routes = [
   {path: 'recuperar-contrasena-listo', component: RecuperarContrasenaListoComponent},
   {path: 'nueva-contrasena', component: NuevaContrasenaComponent},
   {path: 'nueva-contrasena-lista', component: NuevaContrasenaListaComponent},
+  {path: 'perfil-profesor/asignatura-profesor/editar-asignatura', component: EditarAsignaturaComponent},
 ];
 
 @NgModule({
