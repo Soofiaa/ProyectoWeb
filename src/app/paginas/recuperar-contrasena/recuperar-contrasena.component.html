@@ -10,7 +10,12 @@
                 <p class=" mb-5">Te enviaremos un correo para que puedas configurar tu nueva contraseña</p>
                 <div class="mb-3">
                   <label for="email" class="form-label ">Correo institucional</label>
-                  <input type="email" class="form-control" id="email" placeholder="Ingrese su correo">
+                  <input type="email" class="form-control" formControlName="correo" placeholder="Ingrese su correo institucional">
+                  <div *ngIf="this.formularioRecuperarContrasena.get('correo')?.errors?.['required']">
+                    <div id="aviso">
+                        Tiene que ingresar su correo institucional.
+                    </div>
+                </div>
                 </div>
                 <div id="enviar" class ="text-center"> 
                     <a href="/recuperar-contrasena-listo" class="btn btn-primary text-center mt-2"  type="submit">Confirmar</a>

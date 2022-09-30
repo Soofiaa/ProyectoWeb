@@ -5,47 +5,27 @@
             <div class="border border-3 border-primary"></div>
                 <div class="card bg-white">
                     <div class="card-body p-5">
-                        <form class="mb-3 mt-md-4">
-                            <h2 class="fw-bold mb-2 text-uppercase ">Configure una nueva contraseña para su aula virtual</h2>
+                        <form id="formularioNuevaContrasena" class="mb-3 mt-md-4">
+                            <h2 id="texto-informativo" class="fw-bold mb-2 text-uppercase ">Configure una nueva contraseña para su aula virtual</h2>
                             <div id="boton-volver" class ="text-center"> 
                                 <div class="mb-3">
-                                    <input type="text" formControlName="password" type="password">
-                                    <div *ngIf="this.formularioNuevaContrasena.get('contrasena')?.errors?.['required']">
-                                        <div id="aviso">
+                                    <input class="form-control" formControlName="contrasena" type="password">
+                                    <div *ngIf="(this.formularioNuevaContrasena.get('contrasena')?.errors?.['required']) || (this.formularioNuevaContrasena.get('contrasena')?.touched)">
+                                        <div class="aviso">
                                             Tiene que ingresar una nueva contraseña.
                                         </div>
                                     </div>
-                                    <div *ngIf="this.formularioNuevaContrasena.get('contrasena')?.errors?.['minlength']?.['required']">
-                                        <div id="aviso" >
-                                            Tiene que tener al menos 8 caracteres.
-                                        </div>
-                                    </div>
-                                    <!--
-                                    <label for="password" class="form-label ">Nueva contraseña</label>
-                                    <input type="password" class="form-control" id="password" placeholder="*******">
-                                    -->
                                 </div>
                                 <div class="mb-3">
-                                    <input type="text" formControlName="password" type="password">
-                                    <div *ngIf="(this.formularioNuevaContrasena.get('copiaContrasena')?.touched) || (this.formularioNuevaContrasena.get('copiaContrasena')?.dirty) || this.formularioNuevaContrasena.get('copiaContrasena')?.errors?.['required']">
-                                        <div id="aviso">
+                                    <input class="form-control" type="text" formControlName="copiaContrasena" type="password">
+                                    <div *ngIf="(this.formularioNuevaContrasena.get('copiaContrasena')?.errors?.['required'] || (this.formularioNuevaContrasena.get('copiaContrasena')?.touched))">
+                                        <div class="aviso">
                                             Debe reingresar la nueva contraseña.
                                         </div>
                                     </div>
-                                    <div *ngIf="this.formularioNuevaContrasena.get('contrasena')!=this.formularioNuevaContrasena.get('copiaContrasena')">
-                                        <div id="aviso">
-                                            Los campos deben contener la misma nueva contraseña.
-                                        </div>
-                                    </div>
-                                    <!--
-                                    <label for="password" class="form-label ">Escriba nuevamente la contraseña</label>
-                                    <input type="password" class="form-control" id="password" placeholder="*******">
-                                    -->
                                 </div>
                                 <div class ="text-center"> 
-                                    <form action="/nueva-contrasena-lista">
-                                        <button id="boton-ingresar-alumno" class="btn btn-primary text-center mt-2"  type="submit" [disabled]="formularioNuevaContrasena.invalid" href="/perfil-alumno">Confirmar</button>
-                                    </form>
+                                        <button id="boton-ingresar-alumno" class="btn btn-primary text-center mt-2" routerLink="/nueva-contrasena-lista" type="submit">Confirmar</button>
                                 </div>
                             </div>
                         </form> 
