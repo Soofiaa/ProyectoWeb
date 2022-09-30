@@ -9,16 +9,16 @@
 -->
 
 
-<div class="m-4">
+<div class="">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">
             <img src="https://i.ibb.co/Bqyv1sK/2490399.png" height="28" alt="Colegio de Ensueños">
             </a>
-            <button id="navbar" type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button id="navbar" type="button" class="navbar-toggler" (click)="isCollapsed=!isCollapsed" [attr.aria-expanded]="!isCollapsed" data-bs-toggle="collapse" data-bs-target="navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse" id="navbarCollapse" [ngbCollapse]="isCollapsed">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     <a class="nav-link" routerLink="/nosotros">Nosotros</a>
@@ -30,7 +30,6 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                 </form>
                 <div class="navbar-nav ms-auto">
-                    <!-- NO REDIRECCIONA -->
                     <a id="boton-ingresar" class="nav-link" routerLink="/ingreso-aula-virtual">Ingresar al Aula Virtual</a>
                 </div>
             </div>

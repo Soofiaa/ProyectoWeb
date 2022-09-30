@@ -11,11 +11,7 @@ export class IngresoAulaVirtualComponent{
 
   resultado!: string;
   rut!: number;
-
-  formularioLogIn = new FormGroup({
-    rut: new FormControl('', [Validators.required, Validators.minLength(8), Validators.maxLength(10)]),
-    password: new FormControl('', [Validators.required, Validators.minLength(8)]),
-  });
+  formularioLogIn: FormGroup = {} as FormGroup;
 
   submit() {
     if (this.formularioLogIn.valid)
@@ -24,4 +20,14 @@ export class IngresoAulaVirtualComponent{
       this.resultado = "Hay datos inválidos en el formulario";
   }
 
+  iniciarSesion(){
+    console.log(this.formularioLogIn.status);
+  }
+
+  ngOnInit():void{
+      this.formularioLogIn = new FormGroup({
+      rut: new FormControl('', [Validators.required, Validators.minLength(8), Validators.maxLength(10)]),
+      password: new FormControl('', [Validators.required, Validators.minLength(8)]),
+    });
+  }
 }
