@@ -37,17 +37,19 @@
 /* CARTA */
 
 /* FORMULARIO DE CONTACTO */
-#aviso{
+.aviso{
     color: lightgrey;
-    margin-left: 70px;
-    margin-top: -10px;
+    margin-left: 9%;
     margin-bottom: 10px;
 }
 
-.casilla{
-    width: 100%;
-    margin-left: 70px;
-    left: 50%;
+label{
+    margin-left: 9%;
+}
+
+.form-control{
+    margin-left: 9%;
+    margin-top: -1%;
 }
 
 #texto-contactenos{
@@ -60,10 +62,10 @@
     display:block;
 }
 
-.adjuntar{
+.boton-adjuntar{
     width: 90%;
     height: auto;
-    margin-left: 30px;
+    margin-left: -2%;
 }
 
 .enviar{

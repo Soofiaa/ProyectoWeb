@@ -44,7 +44,7 @@
                   </div>
                 </div>
                 <div id="boton-volver" class ="text-center"> 
-                    <button routerLink="/" class="btn btn-primary text-center mt-2">Volver a la página principal</button>
+                    <button routerLink="/" class="btn btn-primary text-center mt-2" [disabled]="formularioLogIn.invalid">Volver a la página principal</button>
                 </div>
               </form> 
             </div>

@@ -1,7 +1,11 @@
 /* USAR PORCENTAJES ES MÁS RESPONSIVO */
 
 #avatar{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
     margin-top: 1%;
     margin-bottom: 1%;
-    display: block;
+    border: 1px solid;
+    border-color: black;
 }

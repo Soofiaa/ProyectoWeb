@@ -36,15 +36,15 @@
                 <div>
                   <label>
                     Nombre:
-                    <input formControlName="nombre" id="name" class="casilla" type="text" placeholder="Ingrese su nombre">
                   </label>
+                    <input formControlName="nombre" id="casillaNombre" class="form-control w-75" type="text" placeholder="Ingrese su nombre">
                   <div *ngIf="this.formularioContacto.get('nombre')?.errors?.['required']">
-                    <div id="aviso">
+                    <div class="aviso">
                         Por favor ingrese su nombre.
                     </div>
                   </div>
                   <div *ngIf="this.formularioContacto.get('nombre')?.errors?.['minlength']">
-                    <div id="aviso">
+                    <div class="aviso">
                         Debe tener como mínimo 10 caracteres.
                     </div>
                   </div>
@@ -52,15 +52,15 @@
                 <div>
                   <label>
                     Correo electrónico:
-                    <input type="text" formControlName="correo" class="casilla" placeholder="Ingrese su correo electrónico">
                   </label>
+                    <input type="text" formControlName="correo" id="casillaCorreo" class="form-control w-75" placeholder="Ingrese su correo electrónico">
                   <div *ngIf="this.formularioContacto.get('correo')?.errors?.['required']">
-                    <div id="aviso">
+                    <div class="aviso">
                         Por favor ingrese un correo electrónico.
                     </div>
                   </div>
                   <div *ngIf="this.formularioContacto.get('correo')?.errors?.['email']">
-                    <div id="aviso">
+                    <div class="aviso">
                         Por favor ingrese un correo electrónico válido.
                     </div>
                   </div>
@@ -68,10 +68,10 @@
                 <div>
                   <label>
                     Mensaje:
-                    <input formControlName="mensaje" placeholder="Escriba su mensaje aquí" class="casilla" id="message" type="text" style="height: 10rem;">
                   </label>
+                    <input formControlName="mensaje" id="casillaMensaje" placeholder="Escriba su mensaje aquí" class="form-control w-75" id="message" type="text" style="height: 10rem;">
                   <div *ngIf="this.formularioContacto.get('mensaje')?.errors?.['required']">
-                    <div id="aviso">
+                    <div class="aviso">
                         Por favor ingrese un mensaje.
                     </div>
                   </div>
