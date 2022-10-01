@@ -1,11 +1,168 @@
 /* USAR PORCENTAJES ES MÁS RESPONSIVO */
 
+/* RESPONSIVIDAD COLUMNAS */+
+#column-izq{ 
+    float: left; 
+    width: 33%; 
+}
+
+#column-der{ 
+    float: right; 
+    width: 33%; 
+}
+
+
+#column-centro{ 
+    display: inline-block; 
+    width: 33%; 
+}
+
+@media screen and (max-width: 960px) {
+
+    #column-izq{ 
+        float: none; 
+        width: 100%; 
+    }
+
+    #column-der{ 
+        float: none; 
+        width: 100%; 
+    }
+
+    #column-centro{ 
+        display: block; 
+        width: 100%; 
+    }
+}
+/* RESPONSIVIDAD COLUMNAS */
+
+#titulo-aula{
+    margin-bottom: 0,5%;
+}
+
+/* COLUMNA IZQUIERDA */
+#cuadro-asignaturas{
+    width: 20%;
+    margin-top: 2%;
+ }
+ 
+ #asignaturas{
+     margin-top: 5%;
+     margin-bottom: 10%;
+     align-self: center;
+ }
+ 
+ button{
+     font-size: 130%;
+     margin-bottom: 20%;
+     margin-left: -3%;
+     display: block;
+     align-items: center;
+     width: 90%;
+     color: black;
+     background-color: lightblue;
+     border-color: whitesmoke;
+ }
+/* COLUMNA IZQUIERDA */
+
+/* COLUMA CENTRAL */
+#cuadro-alumno{
+    margin-top: -40%;
+    margin-left: 28%;
+    width: 40%;
+    height: auto;
+}
+
+#curso{
+   text-align: center;
+   margin-bottom: 3%;
+}
+
 #avatar{
     display: block;
     margin: 0 auto;
-    max-width: 100%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    width: 150px;
     border: 1px solid;
     border-color: black;
+}
+
+#info-alumno{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 120%;
+}
+
+#cuadro-noticias{
+    margin-top: 5%;
+    width: 50%;
+    height: auto;
+    margin-left: 23%;
+    margin-bottom: 5%;
+}
+
+#titulo-noticias{
+    align-self: center;
+}
+
+/* NOTICIA 1*/
+#noticia1{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 50%;
+    height: auto;
+    align-self: center;
+}
+
+#fecha1{
+    align-self: center;
+}
+
+#titulo1{
+    margin-top: -3%;
+    align-self: center;
+    text-decoration: underline;
+}
+
+#detalle1{
+    align-self: center;
+}
+/* NOTICIA 1*/
+
+/* NOTICIA 2 */
+#noticia2{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 50%;
+    height: auto;
+    align-self: center;
+}
+
+#fecha2{
+    align-self: center;
+}
+
+#titulo2{
+    margin-top: -3%;
+    align-self: center;
+    text-decoration: underline;
+}
+
+#detalle2{
+    align-self: center;
+}
+/* NOTICIA 2 */
+
+/* COLUMNA CENTRAL */
+
+#cuadro-calendario{
+    margin-left: 83%;
+    width: 30%;
+    margin-top: -68%;
+    height: auto;
+}
+
+#titulo-calendario{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
 }

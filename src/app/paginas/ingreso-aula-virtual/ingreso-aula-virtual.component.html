@@ -10,7 +10,7 @@
                 <p class=" mb-5">Ingrese las credenciales de su aula virtual</p>
                 <div class="mb-3">
                   <label class="form-label">Rut</label>
-                  <input class="form-control" type="text" formControlName="rut">
+                  <input class="form-control" placeholder="Ingrese su rut, sin punto ni guión." type="text" formControlName="rut">
                   <div class="aviso" *ngIf="this.formularioLogIn.get('rut')?.errors?.['required']">
                     El rut no puede quedar vacío
                   </div>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="mb-3">
                   <p>Contraseña</p>
-                  <input class="form-control" type="password" formControlName="password">
+                  <input class="form-control" placeholder="Ingrese su contraseña, recuerde que al menos tiene 8 caracteres." type="password" formControlName="password">
                   <div *ngIf="this.formularioLogIn.get('password')?.errors?.['required'] || this.formularioLogIn.get('password')?.touched">
                     Tiene que ingresar la contraseña.
                   </div>
@@ -36,15 +36,15 @@
                 <div class="container ms-3">
                   <div class="mt-4 botones-ingreso row">
                     <div class="col">
-                      <button id="boton-ingresar-alumno" class="btn btn-primary btn-lg" type="button" routerLink="/perfil-alumno"><span class="ingresar">Ingresar como alumno</span></button>
+                      <button id="boton-ingresar-alumno" class="btn btn-primary btn-lg" [disabled]="formularioLogIn.invalid" type="button" routerLink="/perfil-alumno"><span class="ingresar">Ingresar como alumno</span></button>
                     </div>
                     <div class="col">
-                      <button id="boton-ingresar-profesor" class="btn btn-primary btn-lg" type="submit" routerLink="/perfil-profesor"><span class="ingresar">Ingresar como profesor</span></button>
+                      <button id="boton-ingresar-profesor" class="btn btn-primary btn-lg" [disabled]="formularioLogIn.invalid" type="submit" routerLink="/perfil-profesor"><span class="ingresar">Ingresar como profesor</span></button>
                     </div>
                   </div>
                 </div>
                 <div id="boton-volver" class ="text-center"> 
-                    <button routerLink="/" class="btn btn-primary text-center mt-2" [disabled]="formularioLogIn.invalid">Volver a la página principal</button>
+                    <button routerLink="/" class="btn btn-primary text-center mt-2">Volver a la página principal</button>
                 </div>
               </form> 
             </div>
