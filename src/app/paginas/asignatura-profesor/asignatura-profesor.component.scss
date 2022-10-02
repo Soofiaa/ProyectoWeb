@@ -1,4 +1,162 @@
-#boton-editar{
-    margin:0 auto;
-    display:block;
+.row{
+  margin-left: 7%;
 }
+
+.column {
+  float: left;
+  width: 50%;
+  }
+
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+
+#titulo-aula{
+  margin-bottom: 0,5%;
+}
+
+#botones-arriba{
+  min-width: fit-content;
+  margin-left: 75%;
+}
+
+#boton-editar-asignatura{
+  width: auto;
+  height: auto;
+  margin-left: 1%;
+  text-align: right;
+}
+
+#boton-volver{
+  width: auto;
+  height: auto;
+}
+
+/* INFORMACIÓN GENERAL */
+#info{
+  text-align: center;
+  margin-top: 2%;
+}
+
+.detalles{
+  font-size: 130%;
+}
+
+#titulo-documentos{
+  margin-left: 10%;
+}
+
+#documentos{
+  margin-left: 10%;
+  font-size: 110%;
+}
+/* INFORMACIÓN GENERAL */
+
+.modulo-titulo{
+  margin-left: 5%;
+  text-decoration: underline;
+  text-decoration: solid;
+}
+
+.modulo-archivos{
+  margin-left: 3%;
+}
+
+img{
+  width: 60%;
+  height: auto;
+  align-self: center;
+  position: relative;
+}
+
+/* TABS */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans";
+    background: #2c3e50;
+    color: #ecf0f1;
+    min-height: fit-content;
+  }
+  
+  .tabs {
+      position: relative;
+      margin: 3rem 0;
+      background: white;
+      height: auto;
+      margin-bottom: 50%;
+      min-height: fit-content;
+      min-width: fit-content;
+  }
+  
+  
+  .tabs::before,
+  .tabs::after {
+    content: "";
+    display: table;
+  }
+  
+  .tabs::after {
+    clear: both;
+  }
+  
+  .tab {
+    float: left;
+    min-width: fit-content;
+  }
+  
+  .tab-switch {
+    display: none;
+  }
+  
+  .tab-label {
+      display: block;
+      line-height: 2.75em;
+      height: 3em;
+      padding: 0 1.618em;
+      background: white;
+      border-right: 0.01rem solid black;
+      border-top: 0.01rem solid black;
+      border-left: 0.01rem solid black;
+      color: black;
+      cursor: pointer;
+      transition: all 0.25s;
+      min-height: fit-content;
+  }
+  
+  .tab-content {
+    border: 1px solid black;
+    height: fit-content;
+    position: absolute;
+    z-index: 1;
+    top: 2.75em;
+    left: 0;
+    width: 90%;
+    min-width: max-content;
+    padding: 1.618rem;
+    background: white;
+    color: #2c3e50;
+    opacity: 0;
+    transition: all 0.35s;
+  }
+  
+  .tab-switch:checked + .tab-label {
+    background: #0090fb;
+    color: white;
+    border-bottom: 0;
+    border-right: 0.125rem solid #fff;
+    transition: all 0.35s;
+    z-index: 1;
+    top: -0.0625rem;
+  }
+  
+  .tab-switch:checked + label + .tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+  }
+/* TABS */

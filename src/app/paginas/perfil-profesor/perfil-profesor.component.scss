@@ -1,0 +1,227 @@
+/* USAR PORCENTAJES ES MÁS RESPONSIVO */
+
+/* RESPONSIVIDAD COLUMNAS */+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+@media screen and (max-width: 1190px) {
+    .column {
+        width: 100%;
+    }
+}
+/* RESPONSIVIDAD COLUMNAS */
+
+#titulo-aula{
+    margin-bottom: 0,5%;
+}
+
+#boton-cerrar-sesion{
+    margin-left: 80%;
+    margin-top: -4%;
+}
+
+/* COLUMNA IZQUIERDA */
+#cuadro-asignaturas{
+    position:relative;
+    margin: 0 auto; 
+    float: none;
+    width: 60%;
+    min-width: fit-content;
+    margin-top: 2%;
+ }
+ 
+ #asignaturas{
+     margin-top: 5%;
+     margin-bottom: 10%;
+     align-self: center;
+ }
+ 
+#columna-botones{
+    align-self: center;
+    width: fit-content;
+    border-style: hidden;
+}
+
+ .botones-asignaturas{
+    font-size: 130%;
+    margin-bottom: 20%;
+    align-self: center;
+    width: 200px;
+    color: black;
+    background-color: lightblue;
+    border-color: whitesmoke;
+ }
+/* COLUMNA IZQUIERDA */
+
+/* COLUMNA CENTRAL */
+#cuadro-profesor{
+    margin: 0 auto; 
+    float: none;
+    width: auto;
+    height: auto;
+}
+
+#curso{
+    margin-top: 2%;
+   text-align: center;
+   margin-bottom: 3%;
+}
+
+#avatar{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    border: 1px solid;
+    border-color: black;
+}
+
+#info-profesor{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 120%;
+}
+
+/* CUADRO NOTICIAS */
+#noticias{
+    position:relative;
+    margin: 0 auto; 
+    float: none;
+    margin-top: 10%;
+    width: 120%;
+    min-width: fit-content;
+    height: auto;
+    margin-bottom: 5%;
+    margin-left: -10%;
+}
+
+#titulo-noticias{
+    margin-top: 2%;
+    align-self: center;
+}
+
+.cuadro-noticia{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 70%;
+    min-width: fit-content;
+    height: fit-content;
+    align-self: center;
+}
+
+.fecha{
+    align-self: center;
+}
+
+.titulo{
+    margin-top: -3%;
+    align-self: center;
+    text-decoration: underline;
+}
+
+.detalle{
+    align-self: center;
+}
+/* CUADRO NOTICIAS */
+/* COLUMNA CENTRAL */
+
+/* COLUMNA IZQUIERDA*/
+#cuadro-calendario{
+    margin: 0 auto; 
+    float: none;
+    width: 70%;
+    min-width: fit-content;
+    height: fit-content;
+    position:relative;
+    margin-bottom: 300px;
+}
+
+#titulo-calendario{
+    margin-top: 3%;
+    margin-bottom: -7%;
+    text-align: center;
+}
+
+.fecha-evaluacion{
+    margin-bottom: -2%;
+}
+
+/*TABS*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans";
+    background: #2c3e50;
+    color: #ecf0f1;
+}
+
+.tabs {
+    position: relative;
+    margin: 3rem 0;
+    background: lightblue;
+    height: auto;
+}
+
+
+.tabs::before,
+.tabs::after {
+  content: "";
+    display: table;
+}
+
+.tabs::after {
+    clear: both;
+}
+
+.tab {
+    float: left;
+}
+
+.tab-switch {
+    display: none;
+}
+
+.tab-label {
+    display: block;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0 1.618em;
+    background: lightblue;
+    border-right: 0.125rem solid lightblue;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.tab-content {
+    height: fit-content;
+    position: absolute;
+    z-index: 1;
+    top: 2.75em;
+    left: 0;
+    width: 100%;
+    padding: 1.618rem;
+    background: lightblue;
+    color: #2c3e50;
+    opacity: 0;
+    transition: all 0.35s;
+}
+
+.tab-switch:checked + .tab-label {
+    background: #fff;
+    color: #2c3e50;
+    border-bottom: 0;
+    border-right: 0.125rem solid #fff;
+    transition: all 0.35s;
+    z-index: 1;
+    top: -0.0625rem;
+}
+
+.tab-switch:checked + label + .tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+}

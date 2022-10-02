@@ -1,6 +1,90 @@
-
-
-
-
-
-<button id="boton-volver" routerLink="/perfil-profesor/asignatura-profesor" class="btn btn-primary text-center mt-2"  type="submit">Asignatura</button>
+<h1 class="text-center" id="titulo-aula">Aula Virtual</h1>
+<button type="button" id="boton-cerrar-sesion" class="btn btn-secondary" routerLink="/ingreso-aula-virtual">Cerrar sesión</button>
+<hr>
+    <div class="row">
+        <div class="col col-25">
+            <div id="columna-asignaturas">
+                <div id="cuadro-asignaturas" class="card">
+                    <h2 id="asignaturas">Asignaturas que dicta</h2>
+                    <div id="columna-botones" class="card">
+                        <button class="btn btn-primary btn-lg botones-asignaturas" type="button" routerLink="/perfil-profesor/asignatura-profesor">Lenguaje</button>
+                        <button class="btn btn-primary btn-lg botones-asignaturas" type="button" routerLink="/perfil-profesor/asignatura-profesor">Caligrafía</button>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="col col-50">
+            <div id="columna-alumno-noticias">
+                <div class="card" id="cuadro-profesor">
+                    <h2 id="curso">Profesor</h2>
+                    <img id="avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABWVBMVEUwrOK/ACDxyaXktpJWQDY8KiDrwJzvxqP///9YQTcvselSPTM9KyEvsupLNy3FAADqu5ZOOS9CLyW+ABo9GwD4z6o9GQAQq+c8KBw9HgDttov3yqE8JhhHMynjs408IxG9ABNYOCY9IAo3bIY8JBI5VGMwp9sxoNA2co85TVncr40uHRXyza3CAA80i7M0hKk7My8zk741fJ04W27No4PUsJA6RUx6YVCMbVm5k3ZKan1XPC5TSUY7NjUoGBCJy+zYxa9RsNr228T47OP45dRqi7bBFynrtZf01rvFLTbkoIfekXvOXVQ7PkBsU0S7mn+if2epinKEalhQU1UvAADGmXUgV3Gbsbpig5N1tNKrs7Wh1vFxxOvI3OWztLCEt82SYoSgY32sQlt1g6y4KD3ScWJXmsizPVKgU3HLR0e6HTLRbV+xS12Ad57PWVSnTmjciHWOb5CAe6FHZ9nHAAAPP0lEQVR4nO2d+VvbRhrHfcrWaUsYHwHZxgabcJibkNKQBgwBEgiku5tNurtNGxJy9KD9/3/YGV0zo9Ng7JH96Pu0z5MQWc989F4z74xMLBYpUqRIkSJFihQpUqRIkSJFihQpUqRIkSJFihQpUqRIkSJFihRptMRxnNhqt9utmMhxtAdz/wJMnebck+lKpTErnG2stMcMkoutzDUqtelyWlN5tlLcXomNDyPXmi9XptOkpivC+pgwiu1mo5F2Ubmy2hFpj65/ie2NQs2NT2MsbhiXgSQUa0HFRiw+udZGZdaLD6px1oIZtrO+sS3UCsViJb3dXBsdw3KtZtHTfmY4ljvN1SJIsGUzC9WKT9ZGw44ct152jT97NNbKDuddGQFEjlsRKsF8Hip2wo7IiZ0nFbtpbqNCmzaCrzius13siU9QVEnmoWRJwf9h+iy8RgSZcX2VsJ8i8XwKCnKoigUnySmWZVMp8J/2f0rGIAvroUSEiX/9YaWB8QmSOX5TPC8pAuBWBAGakMf+kZWtz5XLtGGc4rhWp3lWaBDTMwVnk2WeAFUF4xkgSN76ZGM+ZEYEufNhxZH4FcxAkv4TCxL+E69qjBg4suI0bSRSsDbY59ZAmMl0e8mkx5rgMnJUKxZDZUSuvV1wy52qzfuklIs0doSIjDjbos1lSVwvuNgPCHmfzRl5Cf2ZTQmEta1P1zbCMkEV54uufGnBGrVC8vLs5jmGCA1spSTkpqGZ2XgCIqfkSRflz5l8EkNMqTi/ZH2+nA6Fn3IdL0A0aJUwKM9mmGRyAYWe5plWzKKCEZKZTct7fUSEFso66tYkIMxfYnlHwZ8AdofaQ/qI4pznCtcKLZkwqLwzmQCEyTyL/FTCL8AnqLVt6r2cNU8fRVbTyrpVB1UmoRM+xiIzjcWpit9kdrVNN6NyD93rRBofsoAblH80qRMmk2QgWldIxF3KxSZVM7a9TYjcjjCo9MokzO+gGRwWiCxvu09jlWLnhpv37lNYqYMnCJVMwiTE3BTGnluqMc1IzYpiL04q43/jzydNwuQCll8xm7OC416VOWpW9F7Jo3WThBPKF4gwzxLXyMQHbIgblKzY9mw2ofKm50bTXPIrjPARMZEhfdamAqWVxloh0ILGeE1C6VUCEe4QhMhnHZEIVKTTm+p42FDCV4FpnFDdwggvLMeUyafCO0Nxmsr0hnMnVLBJtX1pSBBeyvhFAv4pJ2JxjQJhbM2NUCKX8foUxYSGMxqL8DGafePXYB/DjUgln7adcaimbNKsgeaoGGESK4iq46MOT63QWEs5FhakgyInRbOXBEa4Sc5M07YP28xYodFC5VaJgijIKYdUYuj860mMcAFbQElpW+/RYcbpORqEG/jaya3RBCcoWING2cJtiM+99ZLo2okzVaZBuIJSjdNBoUAZUFlr3LJuQpMQK4j6pWmHE/BY9adSEltWqnHtFAIT4uDyeSJB2HCBSC6QxunnyIyVDgVCa33oakDYNsTH+ihhI8xfkA9GckO0JnENKqlmveEOKDmTqnI5aScEfirZLnJDNJJqjcoiSp97E6Ni4XaEA1B9tGUBIkJgRbIKsrJg/yT4oUSRUHxSJjdgWBaGkx1QSr1CfDghnNjYLnZzeA1xlsoSimuCoo/vAWrJzzZImb9M4IA4YTK/8Mg9SxFWVKkRwgWUgAEqzqiU5csMwUcSQjOyLsFnk0DLS2OxWccWEwEoyxd2PjthMp+8sLuqQ6Ba1uisgsWH0+T+BAHISy58DkLoqjvO7Gs3YoXOMRtuviGjQdjyqvqaceFzIeyBUU0XqKwQYSCaAyOaatCA/KYrnyuhxujnq3K6QgcwFqtYq9s0nIQiQNbdgF6EWlp1LC/R7ej0MYDE7V1jDArZieAZDz5PQphWXcuhJkphCCsiRohve77ysqAPITDjuQciK9Dhg1NTRIgH4SNvQB9CINYdcYbaKSnuO4sQn73pTbU7EOY33ac4M9R29bkfDUIW91Ge9TGhvw2xVjiuXWrna0TThDyeB/X9ibsRWk1GIrHufkdtA2rGGALhXL5O6k+IGlQq7vap72ntP7VcCX2dNIAwaXJJxARplxKgRUgsD+TLPgjzRsFgeaK/OEPr3DA34+ak3tW+B8LXZqrBT4OlZihNS2Pi9zogsaR47WvCIEJrx0bA0/MMtTmNXg+JfrW66QsYFIdmk5El+lLUSj7XgW4qkZ1PfxMGEVoVkZgl7dI7+g2ftoD3avyLYTChtWWj4oQUp21wYmqkBP3Z+xfDHgjNbCoRhPTepFmbYU1CfUB8pk9Cc2eRJKSVS4ENa8BLjcDRAM8DnDSY0DAiUfKpVXy4xaayRqLRDugF1YpeCPVDDCrWit39kd7xNqFsOhOv1S9+p39CPZsqafNtG7phWLAaULzmVYGptBcv1W4omOEtA1PS4tP7+kb/gte6w/dhw0XtRkbfhxUkirUiJp5pe/lawOhD8m1g9Ea4uadoiUYxXYP9nl4Ucg20B8zrpGwAYHA9fLwoaE5qFg2eXqkAqyd9K19/2vpOW8DKogfCnUVF21LTE01a2f2O4llog1AfjKAZUfJpJPZGqAV02lg8yWlefUjztLdBqOrpHRozsOQHES4sggelWI4hSeUnFM96i+apIT1itK0ZJcBNg9YWIAxZ61CtpIA/Nii+PmNUC92IvI4qB9SLwNXTIi+bDy2lqLTO0piyXrngU9abB1I/XQxYDWUre0kCtdNCprht40yNkjIOhihBU9MAws1F/fCFbHpFOl2g+pKXZUSVNQak9NUvze8IKLL1P5apbctoEjfMty5k8/VBJeWbTgM6wuYDM85gpOEZaMpvW56Zr13wxluui5fnftPvgK7+ohXX5juzVA584WqZ30wimEY8n7zw6bf5E55bJrReEKIbhjH4qvO0haiPam9r0icSfQkX9gwTstZ59ga914IQojBtImqhs+ibTH33D3cWjVC2XgmmnGcMtc4aJqL25Pf8KqIf4YIRhVaWgS8iUDehpjnjNK2g+emi37TGh9A0ocRaR2eL8yF5bV2cN76yRZCCjOhDaJhQQICFZkgAQTCuPTE8VQ2IRJ+zGIYJeeu7FSi+fOimpmlGLZ3egXBTT6SSCVgOjYsaEteeoNP73vvA3ieG9FqomIC1ckiSDBIXmy+Y72DseW4EexHmL/dQIEMDzrXCBhiDpXHO/JIoz2TjRainGcEoE43Qfuug2Fmt+Pup18k9w0d1By3MU/+2AU9ZX0a36DH9difMXyyaIVxuzDbD6KBIXKupfSHknnvXzf186WNjQpqerpTnw80HxbU24Pfy7G25IboR5jd1C5Zrxe2V0fgGTLE9BxndjtG6noLW8QqrzRH6Bl5xba5YE1wQnYT5BQEEX3G1uTY6eJqAHYuzTkd1ntXfrBUb2/MjZD0kwPgPx4F2O+GDf243Oy1xBPE0ie1/XUz5Ej54UxpF42HiWv/O+xBuvS3RHmH/4kpTnoQPxoAPqDSVGX/CTGb8CTMm5VgTahpPwkREOOKC1WL8CRHj+BImxp/QYBxrQo1xzAnHtuKPLeFPT0ulUuztG2/C6rufY+CS0tOfaI/1Lir9lM0+ffPD1BS5BCbXh9UHD3548/Y/2ezoIZZKrf9ms8e2Bb5LFwNSLgHC0kg5bKn0DBqvu+/gc++XVo/3q1tvno0KZKn09t0SdM3MUrdHwuT+UhWYMvnubSz0kMB6Oh4Q8L0D5xs0LoTVg2yW0f01+b+3obYkcM4llFggYU82tAh1yHfPQsrIcT//QOTNzP7BUm+Eye5xFc88W29CuLkmfnr/3JE4l7pORBdCpstUyZ/kX/zyKVQ7pJx4+GtuefmbDSaTzWZ7IKyCywhC5vRLfTn322FoGuGc+OEqV4/H4/WTjIPQkWqCCZmP9Ql4t9zVh3AwiodXOTgioIkjcvf++ODYsZ3vIKxWmW4G/8FJPW7cLnd1SN9XxU/XJh8c0wmJM9XN7mf8CavH2S5uwedH6HaA8ZpyPHKtz7l6HNPEF3KvyemnDkJwCQ4Yn4gTN8x9pplXxcP4cpxU/YZAPMge+O89VUExPMBseDRhu2F8+Yieq4rvc47xxHPPiWRznOh2/Qi73WoGATJfnDcEZvyFFuJ1zjkch5/uZ7NdT8JqN5vdR4D5m7rLHcFTu6bC1/pq91DDq04JwmNAOJVw3ZkBs23Av4QIqy4W1H3/K43D3l/dn3c8fkIa8Xg/c4BlVEQIsmi2eowBMt+8COP1q6HzidfuFnQaUTNjljHNaE2xYY7BDQjkdUd409+GHIvc724xqGviD/vphINsF1CCOSqghFNQQMeAvx8TWTSZfOHlFVC5v4dbNMQrT4cCiAmHGGCv7hJcTR2DZcRBNgMCEOARgPmXPvcEk4nhGrHtbUIQNHY3TWiLxQSkBGT7wJ4HSWBDsm4kmROfewIjHg4TkPvbj3Dio8tpr0wGFo4lUB66DCwRVduCyT8M4XP7PEwjin/6hYy9JFqQcLXY7QLftK8HdfndExpxmIEoeiZSXT7vW+Rd4Xoi/DBExE9+TgqMCHLmbc95BxPW/xyem3K/+9tw4vT0xc2L01MmMRl8ck/Po/k8w/gDAsShAcbEX4Met67l+JePpzZrkoQMwzw/vbn5+BLo41EA4TCzqV/hIq05Ua//QUAiQib//OblCbigPqEr0IbDy6YBYWinrB99REdpTULm9OVRvd7zo9If17AIub8CUqlD9eVvJqNBeHN0OzpNuU9DIgwMQzfGiRv0GzyYF0e3vwPQ8l9DqhfcbU2oM548N38r2Zc78QE3vR6Sm94uDNH46i/03394cnv/NJQbDmBQNfTW8jf4e0jvDjiseuE/KQ1E/HbnT4PPvx9OIDo7fr0P8YbpAzA+cTWUQLxjGOqq/3H3xwO0PIyOlP/aMFB9AQ4nEMXP/fhZnxpKRRS/9meGvlT/dQiB6NuiGTzi4G3IHVIlHMLUVHx/13p/P4SDb2WI1xTDEKSaIexDUXXSYdT8vur9Pag+6Jp/92n3PWngqYZqvdcIB71DQ7XeQw081dCt9/HBr/Mp13uo5QET3rrNdu/KPRsoYR/r+3sjHOwCSqTNN/AFFPVEM+jefggSzYDnbSFINEADBLxTP//elRvkt+5yfTQS749wkMk0BIkGJNMBzky5D6EgHODMNByJZpAnFkIwo4nD8/IDJAwDIEg1gyMMRaK57dz7/20o53vMhSb7AAAAAElFTkSuQmCC" class="square" style="width: 150buttonx;" alt="Avatar">
+                    <p id="info-profesor"> Nombre: Carmen Henríquez <br>
+                                         Rut: 7.464.354-k      
+                    </p>
+                </div>
+                <div id="noticias" class="card">
+                    <h2 id="titulo-noticias">Noticias y Eventos</h2>
+                    <div class="card cuadro-noticia">
+                        <p class="fecha">02-11</p>
+                        <p class="titulo">Mes de María</p>
+                        <p class="detalle">Todos los días conmemoraremos <br>
+                                        el día de nuestra queridísima  <br>
+                                        María, dándole flores, les     <br>
+                                        pedimos por favor que traigan  <br>
+                                        flores en su honor.
+                        </p>
+                    </div>
+                    <div class="card cuadro-noticia">
+                        <p class="fecha">23-11</p>
+                        <p class="titulo">Aniversario de la institución</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-25">
+            <div id="columna-calendario">
+                <div class="card" id="cuadro-calendario">
+                    <h2 id="titulo-calendario">Calendario</h2>
+                    <div class="tabs">
+                        <div class="tab">
+                            <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+                            <label for="tab-1" class="tab-label">Octubre</label>
+                            <div class="tab-content">
+                                <p class="fecha-evaluacion">20-10</p>
+                                <ul>
+                                    <li> <p class="evaluacion">Evaluación de Lenguaje 8vo básico</p> </li>
+                                </ul>
+                                <p class="fecha-evaluacion">27-10</p>
+                                <ul>
+                                    <li> <p class="evaluacion">Dictado Caligrafía 1ro básico</p> </li>
+                                </ul>
+                                <p class="fecha-evaluacion">31-10</p>
+                                <ul>
+                                    <li> <p class="evaluacion">Evaluación de Lenguaje 5to básico</p> </li>
+                                    <li> <p class="evaluacion">Dictado Caligrafía 2do básico</p> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+                            <label for="tab-2" class="tab-label">Noviembre</label>
+                            <div class="tab-content">
+                                <p class="fecha-evaluacion">07-11</p>
+                                <ul>
+                                    <li> <p class="evaluacion">Actividad evaluada Caligrafía 1ro básico</p> </li>
+                                    <li> <p class="evaluacion">Actividad en grupos Lenguaje 6to básico</p> </li>
+                                </ul> 
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+                            <label for="tab-3" class="tab-label">Diciembre</label>
+                            <div class="tab-content">
+                                <p class="fecha-evaluacion">NO HAY EVALUACIONES</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
