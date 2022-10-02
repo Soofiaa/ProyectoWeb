@@ -1,14 +1,16 @@
 
-  <h1 align="center" >ProyectoWeb </h1>
+  <h1 align="center" >Proyecto Web</h1>
 
  
 ## Acerca del proyecto
-Es una plataforma web que consta del seguimiento del aprendizaje estudiantil, exposición de la 
-infraestructura y eventos que se realizaron/realizan/realizarán en el establecimiento escolar. Con 
-el fin de actualizar colegios a una nueva era.
+Es una Aplicación Web que consta del seguimiento del aprendizaje estudiantil, exposición de la  infraestructura y eventos que se realizaron/realizan/realizarán en el establecimiento escolar, es decir, cuenta con un sitio web informativo y un aula virtual. Todo esto con el fin de actualizar colegios a una nueva era, para que todos tengan la misma oportunidad de aprender vía online, ya sea de manera principal o secundaria, para que este sea de inclusivo y equitativo.
 
 ## Detalles del código
-Las vistas se encuentran en src/app/paginas.La aplicación cuenta con 2 formularios reactivos disponibles en las vistas de login y recuperación de contraseña.
+Las vistas o páginas en sí se encuentran en <a routerlink="https://github.com/Soofiaa/ProyectoWeb/tree/EP2/src/app/paginas">paginas</a>.La aplicación cuenta con formularios reactivos disponibles en las secciones 
+<ul>
+  <li> En <a routerlink="https://github.com/Soofiaa/ProyectoWeb/tree/EP2/src/app/paginas/contacto">contacto</a> hay un formulario reactivo, que es el de contacto, llenando todos las casillas correctamente activará el botón "enviar". </li>
+   <li> En <a routerlink="https://github.com/Soofiaa/ProyectoWeb/tree/EP2/src/app/paginas/ingreso-aula-virtual">ingreso-aula-virtual</a>, que es el log-in del aula virtual, tan sólo poniendo los datos se activan los botones para ingresar. </li>
+</ul>
 
 ## Tecnologias
 En esta sección estarán listadas las tecnologias (lenguaje, frameworks y librerías) utilizadas en este proyecto.
