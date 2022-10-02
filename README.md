@@ -20,5 +20,5 @@ En esta sección estarán listadas las tecnologias (lenguaje, frameworks y libre
 - [Css](https://www.w3schools.com/css/)
 
 ## Programadores
-1. Sofía Menzel Madrid
-2. Mauro Alicera Ocaranza
+1. Sofía Menzel 
+2. Mauro Alicera 
