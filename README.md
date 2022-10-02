@@ -8,7 +8,7 @@ Es una Aplicación Web que consta del seguimiento del aprendizaje estudiantil, e
 ## Detalles del código
 Las vistas o páginas en sí se encuentran en <a routerlink="https://github.com/Soofiaa/ProyectoWeb/tree/EP2/src/app/paginas">paginas</a>.La aplicación cuenta con formularios reactivos disponibles en las secciones:
 <ul>
-  <li> En <a href="https://github.com/Soofiaa/ProyectoWeb/tree/EP2/src/app/paginas/contacto">contacto</a>, que es la sección de contacto, llenando todas las casillas correctamente activará el botón "enviar". </li>
+  <li> En <a href="https://github.com/Soofiaa/ProyectoWeb/tree/EP2/src/app/paginas/contacto">contacto</a>, que es la sección de contacto en el sitio web informativo, llenando todas las casillas correctamente activará el botón "enviar". </li>
    <li> En <a href="https://github.com/Soofiaa/ProyectoWeb/tree/EP2/src/app/paginas/ingreso-aula-virtual">ingreso-aula-virtual</a>, que es el log-in del aula virtual, tan sólo poniendo los datos en las casillas activarán los botones para ingresar. </li>
 </ul>
 
