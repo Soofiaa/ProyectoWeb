@@ -1,52 +1,121 @@
 <!-- <button id="boton-volver" routerLink="/buttonerfil-alumno/asignatura-alumno" class="btn btn-buttonrimary text-center mt-2"  tybuttone="submit">Asignatura</button> -->
 
 <h1 class="text-center" id="titulo-aula">Aula Virtual</h1>
+<button type="button" id="boton-cerrar-sesion" class="btn btn-secondary" routerLink="/ingreso-aula-virtual">Cerrar sesión</button>
 <hr>
-<div class="container">
     <div class="row">
-        <div class="column" id="columna-izq">
-            <div id="cuadro-asignaturas" class="card">
-                <h2 id="asignaturas">Asignaturas</h2>
-                <ul>
-                    <button class="btn btn-primary btn-lg" type="button" routerLink="/perfil-alumno/asignatura-alumno">Inglés</button>
-                    <button class="btn btn-primary btn-lg" type="button" routerLink="/perfil-alumno/asignatura-alumno">Español</button>
-                    <button class="btn btn-primary btn-lg" type="button" routerLink="/perfil-alumno/asignatura-alumno">Matemáticas</button>
-                    <button class="btn btn-primary btn-lg" type="button" routerLink="/perfil-alumno/asignatura-alumno">Historia</button>
-                    <button class="btn btn-primary btn-lg" type="button" routerLink="/perfil-alumno/asignatura-alumno">Arte</button>
-                </ul>
+        <div class="col col-25">
+            <div id="columna-asignaturas">
+                <div id="cuadro-asignaturas" class="card">
+                    <h2 id="asignaturas">Asignaturas</h2>
+                    <div id="columna-botones" class="card">
+                        <button class="btn btn-primary btn-lg botones-asignaturas" type="button" routerLink="/perfil-alumno/asignatura-alumno">Inglés</button>
+                        <button class="btn btn-primary btn-lg botones-asignaturas" type="button" routerLink="/perfil-alumno/asignatura-alumno">Lenguaje</button>
+                        <button class="btn btn-primary btn-lg botones-asignaturas" type="button" routerLink="/perfil-alumno/asignatura-alumno">Matemáticas</button>
+                        <button class="btn btn-primary btn-lg botones-asignaturas" type="button" routerLink="/perfil-alumno/asignatura-alumno">Historia</button>
+                        <button class="btn btn-primary btn-lg botones-asignaturas" type="button" routerLink="/perfil-alumno/asignatura-alumno">Arte</button>
+                    </div>  
+                </div>
             </div>
         </div>
-        <div class="column" id="columna-centro">
-            <div class="card" id="cuadro-alumno">
-                <h2 id="curso">Curso: Octavo Básico</h2>
-                <img id="avatar" src="https://cdn-icons-png.flaticon.com/512/168/168730.png" class="square" style="width: 150buttonx;" alt="Avatar">
-                <p id="info-alumno"> Nombre: Sofía del Lago <br>
-                                     Rut: 20.215.022-2      
-                </p>
-            </div>
-            <div id="cuadro-noticias" class="card">
-                <h2 id="titulo-noticias">Noticias y Eventos</h2>
-                <div id="noticia1" class="card">
-                    <p id="fecha1">02-11</p>
-                    <p id="titulo1">Mes de María</p>
-                    <p id="detalle1">Todos los días conmemoraremos <br>
-                                    el día de nuestra queridísima  <br>
-                                    María, dándole flores, les     <br>
-                                    pedimos por favor que traigan  <br>
-                                    flores a su honor.
+        <div class="col col-50">
+            <div id="columna-alumno-noticias">
+                <div class="card" id="cuadro-alumno">
+                    <h2 id="curso">Curso: Octavo Básico</h2>
+                    <img id="avatar" src="https://cdn-icons-png.flaticon.com/512/168/168730.png" class="square" style="width: 150buttonx;" alt="Avatar">
+                    <p id="info-alumno"> Nombre: Sofía del Lago <br>
+                                         Rut: 20.215.022-2      
                     </p>
                 </div>
-                <div id="noticia2" class="card">
-                    <p id="fecha2">23-11</p>
-                    <p id="titulo2">Aniversario de la institución</p>
+                <div id="noticias" class="card">
+                    <h2 id="titulo-noticias">Noticias y Eventos</h2>
+                    <div class="card cuadro-noticia">
+                        <p class="fecha">02-11</p>
+                        <p class="titulo">Mes de María</p>
+                        <p class="detalle">Todos los días conmemoraremos <br>
+                                        el día de nuestra queridísima  <br>
+                                        María, dándole flores, les     <br>
+                                        pedimos por favor que traigan  <br>
+                                        flores en su honor.
+                        </p>
+                    </div>
+                    <div class="card cuadro-noticia">
+                        <p class="fecha">23-11</p>
+                        <p class="titulo">Aniversario de la institución</p>
+                    </div>
                 </div>
             </div>
-            
         </div>
-        <div class="column" id="columna-der">
-            <div class="card" id="cuadro-calendario">
-                <h2 id="titulo-calendario">Calendario</h2>
+        <div class="col col-25">
+            <div id="columna-calendario">
+                <div class="card" id="cuadro-calendario">
+                    <h2 id="titulo-calendario">Calendario</h2>
+                    <div class="tabs">
+                        <div class="tab">
+                            <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+                            <label for="tab-1" class="tab-label">Octubre</label>
+                            <div class="tab-content">
+                                <p class="fecha-evaluacion">20-10</p>
+                                <ul>
+                                    <li> <p class="evaluacion">Prueba de Lenguaje</p> </li>
+                                </ul>
+                                <p class="fecha-evaluacion">27-10</p>
+                                <ul>
+                                    <li> <p class="evaluacion">Prueba de Historia</p> </li>
+                                </ul>
+                                <p class="fecha-evaluacion">31-10</p>
+                                <ul>
+                                    <li> <p class="evaluacion">Prueba de Arte</p> </li>
+                                    <li> <p class="evaluacion">Prueba de Inglés</p> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+                            <label for="tab-2" class="tab-label">Noviembre</label>
+                            <div class="tab-content">
+                                <p class="fecha-evaluacion">07-11</p>
+                                <ul>
+                                    <li> <p class="evaluacion">Prueba de Historia</p> </li>
+                                    <li> <p class="evaluacion">Prueba de Matemáticas</p> </li>
+                                </ul> 
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+                            <label for="tab-3" class="tab-label">Diciembre</label>
+                            <div class="tab-content">
+                                <p class="fecha-evaluacion">NO HAY EVALUACIONES</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+
+                    <!--
+                            <p class="fecha-evaluacion">31-10</p>
+                            <ul>
+                                <li> <p class="evaluacion">Prueba de Arte</p> </li>
+                                <li> <p class="evaluacion">Prueba de Inglés</p> </li>
+                            </ul>
+                        </div>
+                        <div class="card cuadro-evaluacion">
+                            <p class="fecha-evaluacion">07-11</p>
+                            <ul>
+                                <li> <p class="evaluacion">Prueba de Historia</p> </li>
+                                <li> <p class="evaluacion">Prueba de Matemáticas</p> </li>
+                            </ul>
+                        </div>
+                        <div class="card cuadro-evaluacion">
+                            <p class="fecha-evaluacion">31-10</p>
+                            <ul>
+                                <li> <p class="evaluacion">Prueba de Lenguaje</p> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
