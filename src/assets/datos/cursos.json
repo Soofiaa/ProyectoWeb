@@ -1,0 +1,50 @@
+[
+    {
+        "idCurso": 1,
+        "nombreCurso": "1ro básico"
+    },
+    {
+        "idCurso": 2,
+        "nombreCurso": "2do básico"
+    },
+    {
+        "idCurso": 3,
+        "nombreCurso": "3ro básico"
+    },
+    {
+        "idCurso": 4,
+        "nombreCurso": "4to básico"
+    },
+    {
+        "idCurso": 5,
+        "nombreCurso": "5to básico"
+    },
+    {
+        "idCurso": 6,
+        "nombreCurso": "6to básico"
+    },
+    {
+        "idCurso": 7,
+        "nombreCurso": "7mo básico"
+    },
+    {
+        "idCurso": 8,
+        "nombreCurso": "8vo básico"
+    },
+    {
+        "idCurso": 9,
+        "nombreCurso": "1ro medio"
+    },
+    {
+        "idCurso": 10,
+        "nombreCurso": "2do medio"
+    },
+    {
+        "idCurso": 11,
+        "nombreCurso": "3ro medio"
+    },
+    {
+        "idCurso": 12,
+        "nombreCurso": "4to medio"
+    }
+]

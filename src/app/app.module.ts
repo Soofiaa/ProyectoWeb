@@ -8,11 +8,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CabeceraComponent } from './componentes/cabecera/cabecera.component';
 import { PieComponent } from './componentes/pie/pie.component';
 
-import { InicioComponent } from './paginas/inicio/inicio.component';
-import { ContactoComponent } from './paginas/contacto/contacto.component';
-import { NosotrosComponent } from './paginas/nosotros/nosotros.component';
-import { GaleriaComponent } from './paginas/galeria/galeria.component';
-import { VerMasComponent } from './paginas/ver-mas/ver-mas.component';
 import { PerfilProfesorComponent } from './paginas/perfil-profesor/perfil-profesor.component';
 import { AsignaturaProfesorComponent } from './paginas/asignatura-profesor/asignatura-profesor.component';
 import { PerfilAlumnoComponent } from './paginas/perfil-alumno/perfil-alumno.component';
@@ -29,11 +24,6 @@ import { EditarAsignaturaComponent } from './paginas/editar-asignatura/editar-as
     AppComponent,
     CabeceraComponent,
     PieComponent,
-    InicioComponent,
-    ContactoComponent,
-    NosotrosComponent,
-    GaleriaComponent,
-    VerMasComponent,
     PerfilProfesorComponent,
     AsignaturaProfesorComponent,
     IngresoAulaVirtualComponent,

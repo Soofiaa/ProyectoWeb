@@ -1,0 +1,57 @@
+[
+    {
+        "idAsignatura": "1", 
+        "nombreAsignatura": "Caligrafia",
+        "Profesor Jefe": "Carmen Henriquez"
+    },
+    {
+        "idAsignatura": "2", 
+        "nombreAsignatura": "Lenguaje",
+        "Profesor Jefe": "Carmen Henriquez"
+    },
+    {
+        "idAsignatura": "3", 
+        "nombreAsignatura": "Matematicas",
+        "Profesor Jefe": "Jose Soto"
+    },
+    {
+        "idAsignatura": "4",  
+        "nombreAsignatura": "Ingles",
+        "Profesor Jefe": "Bernardo Pinto"
+    },
+    {
+        "idAsignatura": "5", 
+        "nombreAsignatura": "Historia",
+        "Profesor Jefe": "Alvaro Quentt"
+    },
+    {
+        "idAsignatura": "6", 
+        "nombreAsignatura": "Artes",
+        "Profesor Jefe": "Emma DaVinci"
+    },
+    {
+        "idAsignatura": "7", 
+        "nombreAsignatura": "Musica",
+        "Profesor Jefe": "Gustavo Cerati"
+    },
+    {
+        "idAsignatura": "8", 
+        "nombreAsignatura": "Filosofia",
+        "Profesor Jefe": "Edith Stein"
+    },
+    {
+        "idAsignatura": "9", 
+        "nombreAsignatura": "Biología",
+        "Profesor Jefe": "Charles Darwin"
+    },
+    {
+        "idAsignatura": "10", 
+        "nombreAsignatura": "Fisica",
+        "Profesor Jefe": "Albert Einstein"
+    },
+    {
+        "idAsignatura": "11", 
+        "nombreAsignatura": "Estadistica",
+        "Profesor Jefe": "Jonh Wellis"
+    }
+]

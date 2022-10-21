@@ -20,18 +20,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse" [ngbCollapse]="isCollapsed">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    <a class="nav-link" routerLink="/nosotros">Nosotros</a>
-                    <a class="nav-link" routerLink="/galeria">Galeria</a>
-                    <a class="nav-link" routerLink="/contacto">Contacto</a>
+                    <a class="nav-link active" routerLink="/" aria-current="page">Ingresar al Aula Virtual</a>
                 </div>
                 <form id="buscador" class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Escriba algo aquí" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                 </form>
-                <div class="navbar-nav ms-auto">
-                    <a id="boton-ingresar" class="nav-link" routerLink="/ingreso-aula-virtual">Ingresar al Aula Virtual</a>
-                </div>
             </div>
         </div>
     </nav>
