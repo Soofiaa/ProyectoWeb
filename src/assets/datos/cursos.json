@@ -1,50 +1,62 @@
-[
+[ 
     {
         "idCurso": 1,
-        "nombreCurso": "1ro básico"
+        "nombreCurso": "1ro básico",
+        "idAsignatura": ["1", "2", "3", "4", "5"]
     },
     {
         "idCurso": 2,
-        "nombreCurso": "2do básico"
+        "nombreCurso": "2do básico",
+        "idAsignatura": ["1", "2", "3", "4", "5"]
     },
     {
         "idCurso": 3,
-        "nombreCurso": "3ro básico"
+        "nombreCurso": "3ro básico",
+        "idAsignatura": ["1", "2", "3", "4", "5"]
     },
     {
         "idCurso": 4,
-        "nombreCurso": "4to básico"
+        "nombreCurso": "4to básico",
+        "idAsignatura": ["1", "2", "3", "4", "5"]
     },
     {
         "idCurso": 5,
-        "nombreCurso": "5to básico"
+        "nombreCurso": "5to básico",
+        "idAsignatura": ["1", "2", "3", "4", "5"]
     },
     {
         "idCurso": 6,
-        "nombreCurso": "6to básico"
+        "nombreCurso": "6to básico",
+        "idAsignatura": ["2", "3", "4", "5", "6", "7", "9"]
     },
     {
         "idCurso": 7,
-        "nombreCurso": "7mo básico"
+        "nombreCurso": "7mo básico",
+        "idAsignatura": ["2", "3", "4", "5", "6", "7", "9"]
     },
     {
         "idCurso": 8,
-        "nombreCurso": "8vo básico"
+        "nombreCurso": "8vo básico",
+        "idAsignatura": ["2", "3", "4", "5", "6", "7", "9"]
     },
     {
         "idCurso": 9,
-        "nombreCurso": "1ro medio"
+        "nombreCurso": "1ro medio",
+        "idAsignatura": ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
     },
     {
         "idCurso": 10,
-        "nombreCurso": "2do medio"
+        "nombreCurso": "2do medio",
+        "idAsignatura": ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
     },
     {
         "idCurso": 11,
-        "nombreCurso": "3ro medio"
+        "nombreCurso": "3ro medio",
+        "idAsignatura": ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
     },
     {
         "idCurso": 12,
-        "nombreCurso": "4to medio"
+        "nombreCurso": "4to medio",
+        "idAsignatura": ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
     }
 ]
