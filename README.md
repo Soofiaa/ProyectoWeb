@@ -13,3 +13,7 @@ Dada la retroalimentación de la entrega pasada (EP2) se han eliminado las vista
 ## Programadores
 1. Sofía Menzel 
 2. Mauro Alicera 
+
+## Nota 
+<a href="https://github.com/Soofiaa/ProyectoWeb/blob/EP3/Informe%20EP3%20(EP3.4%20y%20EP3.5).pdf">Informe</a> Se ha insertado el informe en formato PDF, el cual se encuentra en la carpeta raíz del proyecto.
+##
