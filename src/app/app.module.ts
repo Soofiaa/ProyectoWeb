@@ -18,6 +18,7 @@ import { RecuperarContrasenaListoComponent } from './paginas/recuperar-contrasen
 import { NuevaContrasenaComponent } from './paginas/nueva-contrasena/nueva-contrasena.component';
 import { NuevaContrasenaListaComponent } from './paginas/nueva-contrasena-lista/nueva-contrasena-lista.component';
 import { EditarAsignaturaComponent } from './paginas/editar-asignatura/editar-asignatura.component';
+import { IngresoAulaVirtualProfesorComponent } from './paginas/ingreso-aula-virtual-profesor/ingreso-aula-virtual-profesor.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { EditarAsignaturaComponent } from './paginas/editar-asignatura/editar-as
     NuevaContrasenaComponent,
     NuevaContrasenaListaComponent,
     EditarAsignaturaComponent,
+    IngresoAulaVirtualProfesorComponent,
   ],
   imports: [
     BrowserModule,

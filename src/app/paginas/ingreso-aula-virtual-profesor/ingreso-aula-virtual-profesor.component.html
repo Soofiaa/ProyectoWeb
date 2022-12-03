@@ -6,7 +6,7 @@
           <div class="card bg-white shadow">
             <div class="card-body p-5">
               <form class="mb-3 mt-md-4" [formGroup]="formularioLogIn" (ngSubmit)="iniciarSesion()">
-                <h2 class="fw-bold mb-2 text-uppercase ">Aula Virtual Alumno</h2>
+                <h2 class="fw-bold mb-2 text-uppercase ">Aula Virtual Profesor</h2>
                 <p class=" mb-5">Ingrese las credenciales de su aula virtual</p>
                 <div class="mb-3">
                   <label class="form-label">Rut</label>
@@ -33,11 +33,11 @@
                   </div>
                 </div>
                 <div class="text-center">
-                  <button id="boton-ingresar-alumno" class="btn btn-primary btn-lg" [disabled]="formularioLogIn.invalid" type="submit" routerLink="/perfil-profesor"><span class="ingresar">Ingresar al aula virtual</span></button>
+                  <button id="boton-ingresar-profesor" class="btn btn-primary btn-lg" [disabled]="formularioLogIn.invalid" type="button" routerLink="/perfil-alumno"><span class="ingresar">Ingresar al aula virtual</span></button>
                   <br>
                   <a id="link-recuperar-contrasena" class="text-primary" href="/recuperar-contrasena">¿Olvidaste la contraseña?</a>
                   <br>
-                  <a id="link-aula-virtual-profesor" class="text-primary" href="/ingreso-aula-virtual-profesor">¿Quiere ingresar como profesor?</a>
+                <a id="link-aula-virtual-alumno" class="text-primary" href="/">¿Quiere ingresar como alumno?</a>
                 </div>
               </form> 
             </div>
