@@ -30,6 +30,7 @@
     width: 60%;
     min-width: fit-content;
     margin-top: 2%;
+    overflow: scroll;
  }
  
  #asignaturas{
@@ -94,6 +95,7 @@
     height: auto;
     margin-bottom: 5%;
     margin-left: -10%;
+    overflow: scroll;
 }
 
 #titulo-noticias{
@@ -134,7 +136,8 @@
     min-width: fit-content;
     height: fit-content;
     position:relative;
-    margin-bottom: 300px;
+    margin-bottom: 2%;
+    overflow: scroll;
 }
 
 #titulo-calendario{

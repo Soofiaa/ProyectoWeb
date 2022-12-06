@@ -52,6 +52,11 @@
   margin-left: 10%;
   font-size: 110%;
 }
+
+#contenido{
+  min-width: fit-content;
+  min-height: fit-content;
+}
 /* INFORMACIÓN GENERAL */
 
 .modulo-titulo{
@@ -142,6 +147,9 @@ img{
     color: #2c3e50;
     opacity: 0;
     transition: all 0.35s;
+    overflow: scroll;
+    min-width: fit-content;
+    min-height: fit-content;
   }
   
   .tab-switch:checked + .tab-label {

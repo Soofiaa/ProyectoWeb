@@ -5,7 +5,7 @@
   .column {
     float: left;
     width: 50%;
-    }
+  }
   
     .row:after {
     content: "";
@@ -142,6 +142,9 @@
       color: #2c3e50;
       opacity: 0;
       transition: all 0.35s;
+      overflow: scroll;
+      min-width: fit-content;
+      min-height: fit-content;
     }
     
     .tab-switch:checked + .tab-label {
